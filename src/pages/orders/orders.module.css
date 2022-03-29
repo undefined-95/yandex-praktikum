@@ -1,0 +1,21 @@
+.wrap {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  text-align: left;
+}
+
+.section {
+  max-width: 50%;
+}

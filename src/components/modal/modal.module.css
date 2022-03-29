@@ -1,0 +1,16 @@
+.modal {
+  position: fixed;
+  width: 720px;
+  height: auto;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  background: #1c1c21;
+  border: 1px solid rgba(76, 76, 255, 0.2);
+  box-shadow: 0 24px 32px rgba(0, 0, 0, 0.04), 0 16px 24px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 40px;
+  box-sizing: border-box;
+}

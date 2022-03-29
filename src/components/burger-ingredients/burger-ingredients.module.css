@@ -1,0 +1,21 @@
+.section {
+  max-width: 50%;
+}
+
+.tab {
+  display: flex;
+}
+
+.menu {
+  overflow-y: auto;
+  max-height: calc(100vh - 320px);
+}
+
+.menu::-webkit-scrollbar {
+  width: 8px;
+  background-color: #2f2f37;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #8585ad;
+}

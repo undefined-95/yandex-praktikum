@@ -1,0 +1,60 @@
+.spinnerBackground {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.4s, display 0.4s ease-out;
+}
+
+.spinnerContainer {
+  height: 120px;
+  width: 120px;
+  z-index: 30;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+}
+
+.rotate {
+  display: block;
+  margin: auto;
+  width: 50%;
+  animation: rotation 2s infinite linear;
+}
+
+.rotate1 {
+  composes: rotate;
+  width: 80%;
+  margin: -70px auto;
+}
+
+.rotate2 {
+  composes: rotate;
+  width: 80%;
+  margin: -95px auto;
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes visibility {
+  80% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

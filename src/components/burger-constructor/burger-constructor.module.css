@@ -1,0 +1,43 @@
+.section {
+  width: calc(50% - 38px);
+}
+
+.list {
+  list-style: none;
+  overflow-y: auto;
+  max-height: calc(100vh - 505px);
+}
+
+.bun {
+  text-align: right;
+}
+
+.list::-webkit-scrollbar {
+  width: 8px;
+  background-color: #2f2f37;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #8585ad;
+}
+
+.listItem {
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+}
+
+.listItem:last-child {
+  margin: 0;
+}
+
+.listIcon {
+  margin-right: 15px;
+  alignment: center;
+  display: inline;
+}
+
+.order {
+  display: flex;
+  justify-content: flex-end;
+}

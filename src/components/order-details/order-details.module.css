@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  color: #f2f2f3;
+}
+
+.color {
+  color: #8585ad;
+}
+
+.imageContainer {
+  position: relative;
+  height: 120px;
+  width: 120px;
+}
+
+.rotate {
+  display: block;
+  margin: auto;
+  width: 50%;
+  animation: rotation 2s infinite linear;
+}
+
+.rotate1 {
+  composes: rotate;
+  width: 80%;
+  margin: -70px auto;
+}
+
+.rotate2 {
+  composes: rotate;
+  width: 80%;
+  margin: -95px auto;
+}
+
+.checkmark {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+  visibility: hidden;
+  animation: visibility 2s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes visibility {
+  80% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
